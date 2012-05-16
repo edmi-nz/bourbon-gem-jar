@@ -1,1 +1,8 @@
+bin/
+cache/
+gems/
+specifications/
 target/
+*~
+*.iml
+*.idea/*
