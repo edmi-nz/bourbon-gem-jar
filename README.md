@@ -11,6 +11,7 @@ REFERENCES:
 The following is a list of references that inspired or helped make this project possible:
 
 thoughtbot, a small Web/mobile consultancy in Boston http://thoughtbot.com/
+                                                     http://thoughtbot.com/bourbon/
 Dmitry Ermans sass-gems project https://github.com/dmitrye/sass-gems
 Nick Siegler's blog post: http://blog.nicksieger.com/articles/2009/01/10/jruby-1-1-6-gems-in-a-jar
 Pastebin.com example of installing a Gem from jruby-rake-plugin: http://pastebin.com/KPeZ8mpG
