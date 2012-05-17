@@ -1,7 +1,7 @@
 bourbon-gem-jar
 ===============
 
-Repackages the  Thoughtworks Bourbon gem into a jar for use in Java projects.
+Repackages the thoughtbot Bourbon gem into a jar for use in Java projects.
 
 The goal is to store versions of bourbon-gem-jar.jar in the central Maven repository
 for Java projects to use without having to download the JAR and repackage it internally.
