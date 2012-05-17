@@ -7,13 +7,13 @@
   <version>2.1.0</version>
   <packaging>jar</packaging>
 
-  <name>Bourbon Gem - Gem in a Jar for Thoughtbot Bourbon</name>
+  <name>Thoughtbot Bourbon Gem in a Jar</name>
   <inceptionYear>2012</inceptionYear>
   <url>https://github.com/edmi-nz/bourbon-gem-jar</url>
 
   <description>
-    This is a repackaged GEM in a JAR format of the thoughtbot-bourbon.gem 
-    package. The bourbon-gem package version follows the thoughtbot-bourbon.gem 
+    Repackages the  Thoughtworks Bourbon gem into a jar for use in Java projects.
+    The bourbon-gem-jar package version follows the thoughtbot-bourbon.gem
     versions located http://thoughtbot.com/bourbon/  (https://github.com/thoughtbot/bourbon). 
     Simply change the version of this package to download and repackage the 
     same GEM version.
@@ -163,55 +163,5 @@
       <version>[3.1.16, 3.2)</version>
     </dependency>
   </dependencies>
-
-
-  <profiles>
-    <profile>
-      <id>development</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-    </profile>
-    <profile>
-      <id>release-sign-artifacts</id>
-      <activation>
-        <activeByDefault>false</activeByDefault>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.4</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-      <distributionManagement>
-        <repository>
-          <id>sonatype-nexus-staging</id>
-          <name>Nexus Release Repository</name>
-          <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-          <id>sonatype-nexus-snapshots</id>
-          <name>Sonatype Nexus Snapshots</name>
-          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
-  </profiles>
 
 </project>
